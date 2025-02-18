@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Schedule</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .schedule-container {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #f5f5f5;
+            color: #555;
+            font-weight: 600;
+        }
+
+        td {
+            background-color: #fff;
+            vertical-align: top;
+        }
+
+        .lesson {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #333;
+            margin: 8px 0;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+            .lesson strong {
+                display: block;
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+
+		.above-week {
+			background-color: #e3f2fd;
+			border-left: 5px solid #1976d2;
+		}
+	
+		.below-week {
+			background-color: #fff3e0;
+			border-left: 5px solid #f57c00;
+		}
+	
+		.single-lesson {
+			background-color: #e8f5e9;
+			border-left: 5px solid #2e7d32;
+		}
+
+        @media (max-width: 768px) {
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .lesson {
+                font-size: 12px;
+                padding: 10px;
+            }
+
+                .lesson strong {
+                    font-size: 14px;
+                }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="schedule-container">
+        <h2>Master's Class Schedule</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <!--<th>Saturday</th>-->
+            </tr>
+            {0}
+        </table>
+    </div>
+</body>
+</html>
